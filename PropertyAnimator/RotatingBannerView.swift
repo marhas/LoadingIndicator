@@ -21,13 +21,6 @@ class RotatingBannerView: UIView {
         setup()
     }
 
-    override var bounds: CGRect {
-        didSet {
-            guard oldValue != bounds, bounds != CGRect.zero else { return }
-            startAnimating()
-        }
-    }
-
     private func setup() {
         translatesAutoresizingMaskIntoConstraints = false
         clipsToBounds = true
@@ -61,16 +54,23 @@ class RotatingBannerView: UIView {
     }
 
     private func startAnimating() {
+        centerXOffset = self.startOffset
         layoutIfNeeded()
-        centerXOffset = -progressView.bounds.width * 0.25
+        centerXOffset = self.endOffset
         animator?.stopAnimation(true)
         animator = UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 1, delay: 0, options: .curveLinear, animations: {
             self.layoutIfNeeded()
         }, completion: { animationPosition in
-            self.centerXOffset = self.progressView.bounds.width * 0.25
-            self.layoutIfNeeded()
             self.startAnimating()
         })
+    }
+
+    private var startOffset: CGFloat {
+        progressView.bounds.width * 0.25
+    }
+
+    private var endOffset: CGFloat {
+        -progressView.bounds.width * 0.25
     }
 
     private var centerXOffset: CGFloat = 0 {
@@ -80,7 +80,7 @@ class RotatingBannerView: UIView {
     }
 
     lazy var progressViewCenterConstraint: NSLayoutConstraint = {
-        let centerConstraint = progressView.centerXAnchor.constraint(equalTo: centerXAnchor, constant: bounds.width * 0.75)
+        let centerConstraint = progressView.centerXAnchor.constraint(equalTo: centerXAnchor, constant: startOffset)
         centerConstraint.isActive = true
         return centerConstraint
     }()

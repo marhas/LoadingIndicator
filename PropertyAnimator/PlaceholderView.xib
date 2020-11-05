@@ -11,10 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlaceholderView" customModule="PropertyAnimator" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="iN0-l3-epB" id="Cp0-Bf-ncD"/>
-                <outletCollection property="roundedPlaceholders" destination="OGv-vH-LwS" collectionClass="NSMutableArray" id="CdY-ob-TrA"/>
-                <outletCollection property="roundedPlaceholders" destination="OGv-vH-LwS" collectionClass="NSMutableArray" id="shJ-bH-NVt"/>
-                <outletCollection property="roundedPlaceholders" destination="OuO-u9-ita" collectionClass="NSMutableArray" id="fxf-Sw-Bgl"/>
-                <outletCollection property="roundedPlaceholders" destination="NdZ-yI-qi3" collectionClass="NSMutableArray" id="rOO-ga-Vka"/>
+                <outletCollection property="placeholdersToBeRound" destination="NdZ-yI-qi3" collectionClass="NSMutableArray" id="vRP-fy-XSe"/>
+                <outletCollection property="placeholdersToBeSlightlyRounded" destination="OGv-vH-LwS" collectionClass="NSMutableArray" id="RQj-A5-HzB"/>
+                <outletCollection property="placeholdersToBeSlightlyRounded" destination="OuO-u9-ita" collectionClass="NSMutableArray" id="h8q-Ma-EjQ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

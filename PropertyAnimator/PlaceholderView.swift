@@ -14,6 +14,12 @@ class PlaceholderView: UIView {
         loadViewFromNib()
     }
 
+    override var bounds: CGRect {
+        didSet {
+            updateCornerRadius()
+        }
+    }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadViewFromNib()
@@ -25,7 +31,6 @@ class PlaceholderView: UIView {
     }
 
     private func loadViewFromNib() {
-        guard subviews.count == 0 else { return }
         Bundle.main.loadNibNamed("PlaceholderView", owner: self)
         addSubview(view)
         view.bound(inside: self)
@@ -36,11 +41,15 @@ class PlaceholderView: UIView {
     }
 
     private func updateCornerRadius() {
-        roundedPlaceholders.forEach {
+        placeholdersToBeSlightlyRounded.forEach {
             $0.layer.cornerRadius = 4
+        }
+        placeholdersToBeRound.forEach {
+            $0.layer.cornerRadius = $0.bounds.size.height / 2
         }
     }
 
-    @IBOutlet var roundedPlaceholders: [RotatingBannerView]!
+    @IBOutlet var placeholdersToBeSlightlyRounded: [UIView]!
+    @IBOutlet var placeholdersToBeRound: [UIView]!
     @IBOutlet var view: UIView!
 }
