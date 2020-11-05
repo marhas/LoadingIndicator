@@ -13,6 +13,10 @@
 		5FF429612553088E0061E7DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF4295F2553088E0061E7DE /* Main.storyboard */; };
 		5FF42963255308900061E7DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF42962255308900061E7DE /* Assets.xcassets */; };
 		5FF42966255308900061E7DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF42964255308900061E7DE /* LaunchScreen.storyboard */; };
+		5FF4296F2553F60D0061E7DE /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF4296E2553F60D0061E7DE /* PlaceholderView.swift */; };
+		5FF42972255400A50061E7DE /* PlaceholderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FF42971255400A50061E7DE /* PlaceholderView.xib */; };
+		5FF429752554027C0061E7DE /* PlaceholderMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF429742554027C0061E7DE /* PlaceholderMaskView.swift */; };
+		5FF42979255405980061E7DE /* RotatingBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF42978255405980061E7DE /* RotatingBannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5FF42962255308900061E7DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FF42965255308900061E7DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FF42967255308900061E7DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FF4296E2553F60D0061E7DE /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
+		5FF42971255400A50061E7DE /* PlaceholderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceholderView.xib; sourceTree = "<group>"; };
+		5FF429742554027C0061E7DE /* PlaceholderMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderMaskView.swift; sourceTree = "<group>"; };
+		5FF42978255405980061E7DE /* RotatingBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingBannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				5FF42962255308900061E7DE /* Assets.xcassets */,
 				5FF42964255308900061E7DE /* LaunchScreen.storyboard */,
 				5FF42967255308900061E7DE /* Info.plist */,
+				5FF4296E2553F60D0061E7DE /* PlaceholderView.swift */,
+				5FF42971255400A50061E7DE /* PlaceholderView.xib */,
+				5FF429742554027C0061E7DE /* PlaceholderMaskView.swift */,
+				5FF42978255405980061E7DE /* RotatingBannerView.swift */,
 			);
 			path = PropertyAnimator;
 			sourceTree = "<group>";
@@ -126,6 +138,7 @@
 			files = (
 				5FF42966255308900061E7DE /* LaunchScreen.storyboard in Resources */,
 				5FF42963255308900061E7DE /* Assets.xcassets in Resources */,
+				5FF42972255400A50061E7DE /* PlaceholderView.xib in Resources */,
 				5FF429612553088E0061E7DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +152,9 @@
 			files = (
 				5FF4295E2553088E0061E7DE /* ViewController.swift in Sources */,
 				5FF4295A2553088E0061E7DE /* AppDelegate.swift in Sources */,
+				5FF42979255405980061E7DE /* RotatingBannerView.swift in Sources */,
+				5FF4296F2553F60D0061E7DE /* PlaceholderView.swift in Sources */,
+				5FF429752554027C0061E7DE /* PlaceholderMaskView.swift in Sources */,
 				5FF4295C2553088E0061E7DE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

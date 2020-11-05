@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlaceholderView" customModule="PropertyAnimator" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Cp0-Bf-ncD"/>
+                <outletCollection property="roundedPlaceholders" destination="OGv-vH-LwS" collectionClass="NSMutableArray" id="CdY-ob-TrA"/>
+                <outletCollection property="roundedPlaceholders" destination="OGv-vH-LwS" collectionClass="NSMutableArray" id="shJ-bH-NVt"/>
+                <outletCollection property="roundedPlaceholders" destination="OuO-u9-ita" collectionClass="NSMutableArray" id="fxf-Sw-Bgl"/>
+                <outletCollection property="roundedPlaceholders" destination="NdZ-yI-qi3" collectionClass="NSMutableArray" id="rOO-ga-Vka"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQP-Wn-3gL">
+                    <rect key="frame" x="55" y="12" width="339" height="36"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OGv-vH-LwS" userLabel="Upper bar" customClass="RotatingBannerView" customModule="PropertyAnimator" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="288" height="14"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="IYj-tn-kqh"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OuO-u9-ita" userLabel="Lower bar" customClass="RotatingBannerView" customModule="PropertyAnimator" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="22" width="152.5" height="14"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="0Qt-al-9OC"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="OGv-vH-LwS" firstAttribute="leading" secondItem="HQP-Wn-3gL" secondAttribute="leading" id="4jq-AT-xWu"/>
+                        <constraint firstItem="OuO-u9-ita" firstAttribute="width" secondItem="HQP-Wn-3gL" secondAttribute="width" multiplier="0.45" id="96b-CS-RMT"/>
+                        <constraint firstItem="OuO-u9-ita" firstAttribute="top" secondItem="OGv-vH-LwS" secondAttribute="bottom" constant="8" id="TUC-UZ-ovn"/>
+                        <constraint firstItem="OGv-vH-LwS" firstAttribute="width" secondItem="HQP-Wn-3gL" secondAttribute="width" multiplier="0.85" id="WxX-rB-fuv"/>
+                        <constraint firstItem="OGv-vH-LwS" firstAttribute="leading" secondItem="OuO-u9-ita" secondAttribute="leading" id="ZdZ-4G-SOO"/>
+                        <constraint firstAttribute="bottom" secondItem="OuO-u9-ita" secondAttribute="bottom" id="hBZ-ld-EgE"/>
+                        <constraint firstItem="OGv-vH-LwS" firstAttribute="top" secondItem="HQP-Wn-3gL" secondAttribute="top" id="u7E-0b-PmQ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NdZ-yI-qi3" userLabel="Icon placeholder" customClass="RotatingBannerView" customModule="PropertyAnimator" customModuleProvider="target">
+                    <rect key="frame" x="20" y="18" width="24" height="24"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="ynK-yQ-jQl"/>
+                        <constraint firstAttribute="height" constant="24" id="yqa-ow-HlH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HQP-Wn-3gL" secondAttribute="trailing" constant="20" id="3tF-Yn-zmw"/>
+                <constraint firstItem="NdZ-yI-qi3" firstAttribute="centerY" secondItem="HQP-Wn-3gL" secondAttribute="centerY" id="Ff2-QB-Qw4"/>
+                <constraint firstItem="HQP-Wn-3gL" firstAttribute="leading" secondItem="NdZ-yI-qi3" secondAttribute="trailing" constant="11" id="SDL-MO-Ypn"/>
+                <constraint firstItem="NdZ-yI-qi3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="X7y-ha-On7"/>
+                <constraint firstItem="HQP-Wn-3gL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="XZ0-cg-A7o"/>
+                <constraint firstAttribute="bottom" secondItem="HQP-Wn-3gL" secondAttribute="bottom" priority="999" constant="12" id="wtW-5L-xA6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="140.57971014492756" y="70.982142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
